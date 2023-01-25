@@ -26,25 +26,74 @@ body {
 
 }
 
+/* phone screen */
 .container {
-    margin-left: auto;
+    min-width: 396px;
+    max-width: 428px;
+     margin-left: auto;
     margin-right: auto;
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    align-items: baseline;
-    /* outline: 2px solid tomato; */
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .container {
+        max-width: 768px;
+    }
+    
+}
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .container {
+        max-width: 1440px;
+        padding-left: 15px;
+        padding-right: 15px;
+        align-items: baseline;
+    }
 
 }
 
 .footer-container {
-    display: flex;
+    
     margin-left: auto;
     margin-right: auto;
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    /* outline: 2px solid tomato; */
+    width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 768px;
+        padding-left: 16px;
+        padding-right: 16px;
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+       
+    }
 
 }
 
@@ -86,17 +135,67 @@ header {
 /* Main nav */
 .main-nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 12px;
-    padding-left: 12px;
+   
 
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .main-nav {
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 12px;
+            padding-left: 12px;
+        
+    }
+
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .main-nav {
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 12px;
+            padding-left: 12px;
+        
+    }
+
+}
+
+.menu-toggle {
+    background-color: transparent;
+    border: none;
+    margin-left: 249px;
 }
 
 /*Оформлення site-nav*/
 .site-nav {
-    display: flex;
-    margin-left: 70px;
+    display: none;
+
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .site-nav {
+        display: flex;
+            margin-left: 70px;
+    }
+
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .site-nav {
+        display: flex;
+            margin-left: 70px;
+    }
 
 }
 
@@ -150,8 +249,28 @@ header {
 
 /* Оформлення auth-nav */
 .auth-nav {
-    display: flex;
-    margin-left: auto;
+    display: none;
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .auth-nav {
+        display: flex;
+            margin-left: auto;
+        
+    }
+
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .auth-nav {
+        display: flex;
+            margin-left: auto;
+    }
+
 }
 
 
@@ -181,12 +300,32 @@ header {
 
 
 /*hero*/
-
+/* phone screen */
 .hero {
     text-align: center;
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
 
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .hero {
+        text-align: center;
+        padding-top: 111px;
+        padding-bottom: 108px;
+    }
+
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .hero {
+        text-align: center;
+        padding-top: 192px;
+        padding-bottom: 192px;   
+    }
 
 }
 
@@ -195,8 +334,8 @@ header {
     background-image: linear-gradient(to right,
             rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url(../images/hero\ image.jpg);
-    max-width: 1440px;
-    height: 600px;
+    max-width: 428px;
+    height: 432px;
     margin-left: auto;
     margin-right: auto;
     background-color: #2E2F42;
@@ -205,17 +344,85 @@ header {
 
 }
 
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .overlay {
+        background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url(../images/hero\ image.jpg);
+            max-width: 768px;
+            height: 436px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #2E2F42;
+            background-repeat: no-repeat;
+            background-position: center;
+       
+    }
+
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .overlay {
+        background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url(../images/hero\ image.jpg);
+            max-width: 1440px;
+            height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #2E2F42;
+            background-repeat: no-repeat;
+            background-position: center;
+    }
+
+}
+
 .hero-title {
     color: #FFFFFF;
     font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 1;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     /* or 107% */
     text-align: center;
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
+}
 
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .hero-title {
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .hero-title {
+        color: #FFFFFF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 56px;
+            line-height: 1;
+            /* or 107% */
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 48px;
+    }
 
 }
 
@@ -224,33 +431,175 @@ header {
 /* Оформлення cекцій(за винятком hero) */
 .section-title {
     color: var(--title-text-color);
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     /* identical to box height, or 120% */
     letter-spacing: 0.02em;
-    margin-top: 8px;
     margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .section-title {
+        color: var(--title-text-color);
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.1;
+            /* identical to box height, or 120% */
+            letter-spacing: 0.02em;
+            margin-bottom: 8px;
+            margin-top: 0;
+        
+    }
+
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .section-title {
+        color: var(--title-text-color);
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 1.2;
+            /* identical to box height, or 120% */
+            letter-spacing: 0.02em;
+            margin-top: 8px;
+            margin-bottom: 8px;
+       
+    }
+
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
 
 }
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        
+    }
+
+}
+
+.first-section-p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .first-section-p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em; 
+    }
+
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .first-section-p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Cписок найпершої секції */
+/* phone screen */
 .first-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap:72px
 }
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .first-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;   
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .first-section {
+        display: flex;
+         flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+}
+
 
 /* Ширина тексту в <li> 1-ої секції */
 .item {
-    width: 264px;
+    display: block;
+    width: 396px;
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .item {
+       width: 351px;
+       height: 120px;
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .item {
+         width: 264px;
+    }
 }
 
 /* Cкидаємо margin для <p> секції */
@@ -269,19 +618,50 @@ header {
 
 
 .section-presentation {
-    color: var(--title-text-color);
-    padding-bottom: 120px;
+    display: none;
+}
 
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .section-presentation {
+
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .section-presentation {
+        color: var(--title-text-color);
+        padding-bottom: 120px;   
+    }
 }
 
 .benefits {
-    display: flex;
-    width: 264px;
-    height: 112px;
-    background-color: #F4F4FD;
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
+   display: none;
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .benefits {
+        
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .benefits {
+        display: flex;
+            width: 264px;
+            height: 112px;
+            background-color: #F4F4FD;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+    }
 }
 
 .benefits-icon {
@@ -309,13 +689,12 @@ header {
 }
 
 .team-title {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 40px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     margin-top: 0;
-    margin-bottom: 0;
     text-align: center;
     margin-bottom: 72px;
 
@@ -326,15 +705,63 @@ header {
     background-color: #F4F4FD;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 128px;
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .section-team {
+        color: var(--title-text-color);
+        background-color: #F4F4FD;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 96px;
+        padding-bottom: 104px;
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .section-team {
+        color: var(--title-text-color);
+        background-color: #F4F4FD;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 /* Список третьої секції */
 .third-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px;
+    justify-content: center;
+   
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .third-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .third-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
 }
 
 .icon {
@@ -344,9 +771,52 @@ header {
     text-align: center;
 }
 
-.team-member {
+.title-team-member {
     margin-top: 32px;
 }
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .title-team-member {
+       
+        margin-top: 32px;
+        margin-bottom: 8px;
+
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .title-team-member {
+        
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Іконки соц. мереж секції Our Team */
 
@@ -361,8 +831,7 @@ header {
     line-height: 40px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    margin-top: 132px;
-    margin-bottom: 0;
+    margin-top: 0;
     text-align: center;
     margin-bottom: 72px;
 
@@ -468,17 +937,10 @@ header {
 
 }
 
-
-/* Оформлення п'ятої секції */
-.customers-title {
-    margin-top: 130px;
-    margin-bottom: 72px;
-}
-
 /* Посилання секції customers */
 .customer {
     display: inline-flex;
-    width: 168px;
+    width: 190px;
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
@@ -489,9 +951,63 @@ header {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ,border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.customers {
-    padding-bottom: 120px;
+/* tablet screen */
+@media screen and (min-width:768px) {
 
+    .customer {
+        display: inline-flex;
+            width: 168px;
+            height: 88px;
+            border: 1px solid #8E8F99;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: none;
+            color: #8E8F99;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .customer {
+        display: inline-flex;
+            width: 168px;
+            height: 88px;
+            border: 1px solid #8E8F99;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: none;
+            color: #8E8F99;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+}
+
+
+.customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .customers {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 /* Ховер лого клієнтів */
@@ -511,15 +1027,35 @@ header {
 .sixth-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .sixth-section {
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .sixth-section {
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+        
+
+    }
 }
 
 /* Footer */
-.footer-form {
-    color: #E7E9FC;
-    background-color: #2E2F42;
-
-}
 
 .logo-footer {
     color: #F4F4FD;
@@ -528,9 +1064,44 @@ header {
     font-size: 18px;
     line-height: 1.3;
     letter-spacing: 0.03em;
+    margin-left: 75px;
+    margin-right: 75px;
     /* identical to box height, or 133% */
 
 }
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .logo-footer {
+        color: #F4F4FD;
+            font-family: Raleway, sans-serif;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 1.3;
+            letter-spacing: 0.03em;
+            margin-left: 0;
+            margin-right: 0;
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .logo-footer {
+        color: #F4F4FD;
+            font-family: Raleway, sans-serif;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 1.3;
+            letter-spacing: 0.03em;
+            margin-left: 0;
+            margin-right: 0;
+            /* identical to box height, or 133% */
+        
+    }
+}
+
 
 .logo-footer>span {
     color: #4D5AE5;
@@ -538,12 +1109,34 @@ header {
 }
 
 .footer-form {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 12px;
-    padding-right: 12px;
-
+    padding-top: 96px;
+    padding-bottom: 96px;
+    color: #E7E9FC;
+    background-color: #2E2F42;
+   
 }
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .footer-form {
+      
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .footer-form {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 12px;
+        padding-right: 12px;
+        color: #E7E9FC;
+        background-color: #2E2F42;
+    }
+}
+
 
 .footer-form p {
     margin-top: 16px;
@@ -551,15 +1144,76 @@ header {
 
 }
 
+
+.footer-webstudio {
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-bottom: 72px;
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .footer-webstudio {
+        margin-left: 92px;
+        margin-right: 0;
+        margin-bottom: 0;
+
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .footer-webstudio {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+       
+    }
+}
+
+
 .footer-icons {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin-top: 16px;
-    margin-left: 120px;
+    margin-left: 94px;
+    margin-right: 94px;
     margin-bottom: 0;
     padding-left: 0;
+}
 
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .footer-icons {
+        display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin-top: 16px;
+            margin-left: 24px;
+            margin-right: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .footer-icons {
+        display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin-top: 16px;
+            margin-left: 120px;
+            margin-right: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+    }
 }
 
 .footer-li {
@@ -567,7 +1221,7 @@ header {
 }
 
 .social-media-title {
-    margin-left: 120px;
+    margin-left: 150px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -575,6 +1229,37 @@ header {
     margin-bottom: 0;
     margin-top: 0;
 }
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .social-media-title {
+        margin-left: 24px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            margin-bottom: 0;
+            margin-top: 0;
+
+
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .social-media-title {
+        margin-left: 120px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
 
 .footer-icon {
     width: 24px;
@@ -776,7 +1461,7 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 584px;
+    min-height: 584px;
     width: 408px;
     background-color: #FFFFFF;
     padding-top: 72px;
@@ -903,15 +1588,36 @@ header {
 }
 
 .footer-subscribe {
-    display: flex;
-    flex-direction: column;
-    margin-left: 80px;
+    margin-top: 72px;
+}
 
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .footer-subscribe {
+        margin-left: 92px;
+       
+
+
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .footer-subscribe {
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        margin-top: 0;
+    }
 }
 
 .button-subscribe {
     display: flex;
-    margin-left: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
     width: 165px;
     height: 40px;
     border-radius: 4px;
@@ -925,6 +1631,41 @@ header {
     padding-left: 24px;
     padding-right: 24px;
 }
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .button-subscribe {
+        margin-top: 0;
+        margin-left: 24px;
+
+
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .button-subscribe {
+        display: flex;
+            margin-left: 24px;
+            width: 165px;
+            height: 40px;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: var(--accent-color);
+            border: 1px solid #4D5AE5;
+            color: #FFFFFF;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 24px;
+            padding-right: 24px;
+            margin-top: 0;
+
+    }
+}
+
 
 .icon-send {
 margin-left: 16px;
@@ -1011,7 +1752,7 @@ textarea {
 
 /* Input для email в футері */
 .input-footer {
-    width: 264px;
+    width: 396px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1020,9 +1761,41 @@ textarea {
     outline: 1px solid rgba(255, 255, 255, 0.3); 
     padding-left: 16px;
     color: #E7E9FC;
-   
-
 }
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .input-footer {
+        width: 264px;
+            height: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            background-color: #2E2F42;
+            outline: 1px solid rgba(255, 255, 255, 0.3);
+            padding-left: 16px;
+            color: #E7E9FC;
+
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .input-footer {
+        width: 264px;
+            height: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            background-color: #2E2F42;
+            outline: 1px solid rgba(255, 255, 255, 0.3);
+            padding-left: 16px;
+            color: #E7E9FC;
+    }
+}
+
 /* Кастомний chekbox */
 .check-icon {
     display: inline-block;
@@ -1064,22 +1837,83 @@ textarea {
 }
 
 .footer-form-title {
-    margin: 0;
+    margin-left: 160px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .footer-form-title {
+        margin-left: 0;
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .footer-form-title {
+        margin: 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+        
+    }
+}
+
 .footer-send {
-    display: flex;
     align-items: center;
     margin-top: 16px;
+   
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .footer-send {
+        display: flex;
+     
+
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1158px) {
+
+    .footer-send {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+    }
 }
 
 textarea {
     width: 360px;
     height: 120px;
+}
+
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button .is-open .icon-cross {
+    display: block;
+}
+
+.menu-button .is-open .icon-menu {
+    display: none;
 }
 
 /*колір основного тексту #2E2F42*/
