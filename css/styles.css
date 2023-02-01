@@ -90,6 +90,8 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -141,6 +143,7 @@ header {
             justify-content: center;
             padding-right: 12px;
             padding-left: 12px;
+            gap: 0;
         
     }
 
@@ -324,20 +327,39 @@ header {
 
 }
 
+/* phone screen */
 
-.overlay {
-    background-image: linear-gradient(to right,
-            rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(../images/hero\ image.jpg);
-    max-width: 428px;
-    height: 432px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #2E2F42;
-    background-repeat: no-repeat;
-    background-position: center;
+    
 
-}
+    .overlay {
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(../images/mob-hero@1x.jpg);
+        max-width: 428px;
+        height: 432px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #2E2F42;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+        @media screen and (max-width:767.98px) and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    
+            .overlay {
+                background-image: linear-gradient(to right,
+                        rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                    url(../images/mob-hero@2x.jpg);
+                background-size: cover;
+            }
+        }
+
+
+
 
 /* tablet screen */
 @media screen and (min-width:768px) {
@@ -345,7 +367,7 @@ header {
     .overlay {
         background-image: linear-gradient(to right,
                     rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url(../images/hero\ image.jpg);
+                url(../images/tab-hero@1x.jpg);
             max-width: 768px;
             height: 436px;
             margin-left: auto;
@@ -353,10 +375,26 @@ header {
             background-color: #2E2F42;
             background-repeat: no-repeat;
             background-position: center;
+            background-size: cover;
        
     }
 
 }
+
+@media screen and (min-width:768px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+
+    .overlay {
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(../images/tab-hero@2x.jpg);
+        background-size: cover;
+    }
+}
+
+
+
 
 /* desktop screen */
 @media screen and (min-width:1200px) {
@@ -364,7 +402,7 @@ header {
     .overlay {
         background-image: linear-gradient(to right,
                     rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url(../images/hero\ image.jpg);
+                url(../images/desk-hero@1x.jpg);
             max-width: 1440px;
             height: 600px;
             margin-left: auto;
@@ -372,9 +410,24 @@ header {
             background-color: #2E2F42;
             background-repeat: no-repeat;
             background-position: center;
+            background-size: cover;
     }
 
 }
+
+
+@media screen and (min-width:1200px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+
+    .overlay {
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(../images/desk-hero@2x.jpg);
+        background-size: cover;
+    }
+}
+
 
 .hero-title {
     color: #FFFFFF;
@@ -435,6 +488,29 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+.section-title-portfolio {
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* tablet screen */
 @media screen and (min-width:768px) {
@@ -628,6 +704,7 @@ header {
 @media screen and (min-width:1200px) {
 
     .section-presentation {
+        display: flex;
         color: var(--title-text-color);
         padding-bottom: 120px;   
     }
@@ -882,29 +959,147 @@ header {
 .fourth-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 24px;
 }
 
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .fourth-section {
+
+       
+
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1200px) {
+
+    .fourth-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+}
+
+/* секція портфоліо */
+/* mobile */
 .filter {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .filter {
+       
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1200px) {
+
+    .filter {
+        padding-top: 96px;
+        padding-bottom: 120px;
+    }
 }
 
 /* Список четвертої секції */
+
 .fifth-section {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 72px;
-    gap: 24px;
+    margin-top: 48px;
+    gap: 48px;
     justify-content: center;
 
 }
 
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .fifth-section {
+
+
+
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1200px) {
+
+    .fifth-section {
+        display: flex;
+            flex-wrap: wrap;
+            margin-top: 72px;
+            gap: 24px;
+            justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .flex-element {
-    margin-top: 48px;
+    margin-top: 0;
 
 }
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .flex-element {
+        
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1200px) {
+
+    .flex-element {
+        margin-top: 48px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Ховер карток портфоліо */
 .portfolio-link:hover,
@@ -2071,15 +2266,6 @@ font-weight: 600;
     width: 24px;
     height: 24px;
 }
-
-
-
-
-
-
-
-
-
 
 
 
