@@ -33,7 +33,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    
 }
 /* tablet screen */
 @media screen and (min-width: 768px) {
@@ -258,6 +258,8 @@ header {
         display: flex;
         flex-direction: column;
             margin-left: auto;
+            padding-top: 24px;
+            
             
         
     }
@@ -270,10 +272,12 @@ header {
     .auth-nav {
         display: flex;
             margin-left: auto;
+           flex-direction: row;
+           align-items: center;
+           padding-top: 0;
     }
 
 }
-
 
 .auth-nav a {
     color: #434455;
@@ -292,13 +296,13 @@ header {
 
     .auth-nav a {
         color: #434455;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.5;
-            margin-right: 40px;
-            padding: 0;
-            display: block;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.33;
+        margin-right: auto;
+        padding: 0;
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
     }
@@ -316,36 +320,18 @@ header {
             margin-right: 40px;
             padding-top: 24px;
             padding-bottom: 24px;
+           
             display: block;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.number a {
-    margin-right: 0;
-}
-
 /* tablet screen */
 @media screen and (min-width:768px) {
 
     .number a {
-       
-
-
+        margin-top: 4px;
     }
 
 }
@@ -354,91 +340,11 @@ header {
 @media screen and (min-width:1200px) {
 
     .number a {
-       
+        margin-top: 0;
+        margin-right: 0;
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* tablet screen */
-@media screen and (min-width:768px) {
-
-    .auth-nav a {
-        color: #434455;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        margin-right: 40px;
-        padding: 0;
-        display: block;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-    }
-
-}
-
-/* desktop screen */
-@media screen and (min-width:1200px) {
-
-    .auth-nav a {
-        color: #434455;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        margin-right: 40px;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        display: block;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .auth-nav a:hover {
     color: #4D5AE5;
@@ -653,17 +559,6 @@ header {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* tablet screen */
 @media screen and (min-width:768px) {
 
@@ -756,20 +651,6 @@ header {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Cписок найпершої секції */
 /* phone screen */
 .first-section {
@@ -820,7 +701,7 @@ header {
 /* desktop screen */
 @media screen and (min-width:1200px) {
 
-    .item {
+    .item  {
          width: 264px;
     }
 }
@@ -1020,28 +901,6 @@ header {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Іконки соц. мереж секції Our Team */
 
 .team-icon {
@@ -1118,7 +977,7 @@ header {
 @media screen and (min-width:768px) {
 
     .fourth-section {
-
+        justify-content: center;
        
 
     }
@@ -1174,9 +1033,11 @@ header {
 @media screen and (min-width:768px) {
 
     .fifth-section {
-
-
-
+            gap: 24px;
+            justify-content: left;
+            
+        
+       
     }
 }
 
@@ -1191,27 +1052,6 @@ header {
             justify-content: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .flex-element {
     margin-top: 0;
@@ -1235,24 +1075,6 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Ховер карток портфоліо */
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -1274,9 +1096,23 @@ header {
     border-bottom: 0.5px #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+}
 
+/* tablet screen */
+@media screen and (min-width:768px) {
 
+    .portfolio-link {
+        
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1200px) {
+
+    .portfolio-link {
+       
+
+    }
 }
 
 /* Посилання секції customers */
@@ -2383,7 +2219,7 @@ font-weight: 600;
     background-color: #FFFFFF;
     z-index: 999;
 
-    transform: translateX(150%);
+    transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
 
@@ -2418,36 +2254,6 @@ font-weight: 600;
     width: 24px;
     height: 24px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*колір основного тексту #2E2F42*/
 
