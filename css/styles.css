@@ -48,8 +48,8 @@ body {
     }
 }
 
+/* phone screen */
 .footer-container {
-    
     margin-left: auto;
     margin-right: auto;
     max-width: 428px;
@@ -127,6 +127,7 @@ header {
 }
 
 /* Main nav */
+/* phone screen */
 .main-nav {
     display: flex;
     gap: 249px;
@@ -163,7 +164,7 @@ header {
     }
 
 }
-
+/* кнопка mobile menu */
 .menu-toggle {
     background-color: transparent;
     border: none;
@@ -183,7 +184,7 @@ header {
 
     .site-nav {
         display: flex;
-            margin-left: 70px;
+            margin-left: 120px;
     }
 
 }
@@ -259,9 +260,6 @@ header {
         flex-direction: column;
             margin-left: auto;
             padding-top: 24px;
-            
-            
-        
     }
 
 }
@@ -278,7 +276,7 @@ header {
     }
 
 }
-
+/* phone screen */
 .auth-nav a {
     color: #434455;
     font-weight: 400;
@@ -386,9 +384,6 @@ header {
 }
 
 /* phone screen */
-
-    
-
     .overlay {
         background-image: linear-gradient(to right,
                 rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -536,6 +531,7 @@ header {
 
 /* Оформлення cекцій(за винятком hero) */
 .section-title {
+    text-align: center;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -543,8 +539,7 @@ header {
     /* identical to box height, or 120% */
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 .section-title-portfolio {
@@ -571,6 +566,7 @@ header {
             letter-spacing: 0.02em;
             margin-bottom: 8px;
             margin-top: 0;
+            text-align: left;
         
     }
 
@@ -694,7 +690,7 @@ header {
 
     .item {
        width: 351px;
-       height: 120px;
+       
     }
 }
 
@@ -723,14 +719,6 @@ header {
 
 .section-presentation {
     display: none;
-}
-
-/* tablet screen */
-@media screen and (min-width:768px) {
-
-    .section-presentation {
-
-    }
 }
 
 /* desktop screen */
@@ -878,6 +866,7 @@ header {
 
 .title-team-member {
     margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 /* tablet screen */
@@ -890,17 +879,6 @@ header {
 
     }
 }
-
-/* desktop screen */
-@media screen and (min-width:1200px) {
-
-    .title-team-member {
-        
-
-
-    }
-}
-
 /* Іконки соц. мереж секції Our Team */
 
 .team-icon {
@@ -1005,7 +983,8 @@ header {
 @media screen and (min-width:768px) {
 
     .filter {
-       
+       padding-top: 64px;
+       padding-bottom: 96px;
     }
 }
 
@@ -1036,6 +1015,7 @@ header {
             gap: 24px;
             justify-content: left;
             
+            
         
        
     }
@@ -1062,19 +1042,28 @@ header {
 @media screen and (min-width:768px) {
 
     .flex-element {
+        margin-top: 72px;
         
     }
-}
 
+    .flex-element-tablet {
+        margin-top: 72px;
+    
+    }
+}
 /* desktop screen */
 @media screen and (min-width:1200px) {
 
     .flex-element {
         margin-top: 48px;
     }
+
+     .flex-element-tablet {
+        margin-top: 0;
+    
+    }
+
 }
-
-
 /* Ховер карток портфоліо */
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -1082,8 +1071,6 @@ header {
     cursor: pointer;
 
 }
-
-
 .stylized-paragraph {
     margin-top: 0;
     padding-bottom: 8px;
@@ -1096,23 +1083,6 @@ header {
     border-bottom: 0.5px #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* tablet screen */
-@media screen and (min-width:768px) {
-
-    .portfolio-link {
-        
-    }
-}
-
-/* desktop screen */
-@media screen and (min-width:1200px) {
-
-    .portfolio-link {
-       
-
-    }
 }
 
 /* Посилання секції customers */
@@ -1294,14 +1264,6 @@ header {
    
 }
 
-/* tablet screen */
-@media screen and (min-width:768px) {
-
-    .footer-form {
-      
-    }
-}
-
 /* desktop screen */
 @media screen and (min-width:1200px) {
 
@@ -1321,7 +1283,6 @@ header {
     margin-bottom: 0;
 
 }
-
 
 .footer-webstudio {
     margin-left: 64px;
@@ -1572,8 +1533,6 @@ header {
     padding-left: 16px;
 }
 
-/* Блокова модель */
-
 *,
 ::after,
 ::before {
@@ -1639,8 +1598,8 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    min-height: 584px;
-    width: 408px;
+    min-height: 586px;
+    width: 392px;
     background-color: #FFFFFF;
     padding-top: 72px;
     
@@ -1652,6 +1611,26 @@ header {
     padding-bottom: 24px;
     padding-left: 24px;
     padding-right: 24px;
+}
+
+/* tablet screen */
+@media screen and (min-width:768px) {
+
+    .modal {
+        min-height: 586px;
+        width: 408px;
+        
+
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width:1200px) {
+
+    .modal {
+        min-height: 584px;
+        width: 408px;
+    }
 }
 
 .close-icon {
@@ -2080,14 +2059,9 @@ textarea {
     background-color: transparent;
 }
 
-
-
-
 .mobile-menu {
     margin-bottom: auto;
 }
-
-
 
 .mobile-contacts-link {
     font-weight: 500;
