@@ -1216,8 +1216,7 @@ header {
     font-size: 18px;
     line-height: 1.3;
     letter-spacing: 0.03em;
-    margin-left: 75px;
-    margin-right: 75px;
+    text-align: center;
     /* identical to box height, or 133% */
 
 }
@@ -1285,13 +1284,15 @@ header {
 .footer-form p {
     margin-top: 16px;
     margin-bottom: 0;
+    
 
 }
 
 .footer-webstudio {
-    margin-left: 64px;
-    margin-right: 64px;
+    /* margin-left: 64px;
+    margin-right: 64px; */
     margin-bottom: 72px;
+    text-align: center;
 }
 
 /* tablet screen */
@@ -1320,10 +1321,9 @@ header {
 .footer-icons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
     margin-top: 16px;
-    margin-left: 94px;
-    margin-right: 94px;
     margin-bottom: 0;
     padding-left: 0;
 }
@@ -1364,7 +1364,7 @@ header {
 }
 
 .social-media-title {
-    margin-left: 150px;
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -1748,6 +1748,7 @@ header {
 }
 
 .footer-subscribe {
+    text-align: center;
     margin-top: 72px;
 }
 
@@ -1997,7 +1998,6 @@ textarea {
 }
 
 .footer-form-title {
-    margin-left: 160px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
