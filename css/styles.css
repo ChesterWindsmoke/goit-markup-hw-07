@@ -28,11 +28,14 @@ body {
 
 /* phone screen */
 .container {
+    min-width: 320px;
     max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-between;
+    
     
 }
 /* tablet screen */
@@ -130,10 +133,12 @@ header {
 /* phone screen */
 .main-nav {
     display: flex;
-    gap: 249px;
+    position: relative;
+    /* gap: 249px; */
    height: 70px;
    align-items: center;
-
+   /* justify-content: space-between; */
+   
 }
 
 /* tablet screen */
@@ -359,6 +364,7 @@ header {
     text-align: center;
     padding-top: 112px;
     padding-bottom: 112px;
+    
 }
 
 /* tablet screen */
@@ -378,7 +384,9 @@ header {
     .hero {
         text-align: center;
         padding-top: 192px;
-        padding-bottom: 192px;   
+        padding-bottom: 192px;
+        
+
     }
 
 }
@@ -386,7 +394,7 @@ header {
 /* phone screen */
     .overlay {
         background-image: linear-gradient(to right,
-                rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/mob-hero@1x.jpg);
         max-width: 428px;
         height: 432px;
@@ -399,27 +407,26 @@ header {
 
     }
 
-        @media screen and (max-width:767.98px) and (min-device-pixel-ratio: 2),
+        @media screen and (min-width:428px) and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
     
             .overlay {
                 background-image: linear-gradient(to right,
-                        rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                     url(../images/mob-hero@2x.jpg);
                 background-size: cover;
+                
             }
         }
 
 
-
-
 /* tablet screen */
-@media screen and (min-width:768px) {
+@media screen and (min-width:429px)  {
 
     .overlay {
         background-image: linear-gradient(to right,
-                    rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                    rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url(../images/tab-hero@1x.jpg);
             max-width: 768px;
             height: 436px;
@@ -434,27 +441,25 @@ header {
 
 }
 
-@media screen and (min-width:768px) and (min-device-pixel-ratio: 2),
+@media screen and (min-width:429px) and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 
     .overlay {
         background-image: linear-gradient(to right,
-                rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/tab-hero@2x.jpg);
         background-size: cover;
+        
     }
 }
 
-
-
-
 /* desktop screen */
-@media screen and (min-width:1200px) {
+@media screen and (min-width:769px) {
 
     .overlay {
         background-image: linear-gradient(to right,
-                    rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                    rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url(../images/desk-hero@1x.jpg);
             max-width: 1440px;
             height: 600px;
@@ -468,19 +473,18 @@ header {
 
 }
 
-
-@media screen and (min-width:1200px) and (min-device-pixel-ratio: 2),
+@media screen and (min-width:769px) and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 
     .overlay {
         background-image: linear-gradient(to right,
-                rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/desk-hero@2x.jpg);
         background-size: cover;
+        
     }
 }
-
 
 .hero-title {
     color: #FFFFFF;
@@ -1637,6 +1641,7 @@ header {
     position: absolute;
     display: flex;
     width: 24px;
+    padding: 0;
     height: 24px;
     border-radius: 50%;
     background-color: #E7E9FC;
@@ -1907,7 +1912,7 @@ textarea {
 
 /* Input для email в футері */
 .input-footer {
-    width: 396px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -2061,6 +2066,7 @@ textarea {
 
 .mobile-menu {
     margin-bottom: auto;
+    
 }
 
 .mobile-contacts-link {
@@ -2193,7 +2199,7 @@ font-weight: 600;
     background-color: #FFFFFF;
     z-index: 999;
 
-    transform: translateX(100%);
+    transform: translateX(200%);
     transition: transform 250ms ease-in-out;
 }
 
