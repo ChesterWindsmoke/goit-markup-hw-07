@@ -70,8 +70,8 @@ body {
         max-width: 768px;
         padding-left: 15px;
         padding-right: 15px;
-        /* margin-left: auto;
-        margin-right: auto; */
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -81,7 +81,7 @@ body {
 
     .footer-container {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         margin-left: auto;
         margin-right: auto;
         max-width: 1158px;
@@ -1289,8 +1289,6 @@ header {
 }
 
 .footer-webstudio {
-    /* margin-left: 64px;
-    margin-right: 64px; */
     margin-bottom: 72px;
     text-align: center;
 }
@@ -1299,9 +1297,18 @@ header {
 @media screen and (min-width:768px) {
 
     .footer-webstudio {
+        text-align: left;
         margin-left: 92px;
         margin-right: 0;
         margin-bottom: 0;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .social-media {
+        margin-left: 24px;
 
     }
 }
@@ -1310,10 +1317,19 @@ header {
 @media screen and (min-width:1158px) {
 
     .footer-webstudio {
+        text-align: left;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 0;
        
+    }
+}
+
+@media screen and (min-width:1158px) {
+
+    .social-media {
+       margin-left: 100px;
+
     }
 }
 
@@ -1326,6 +1342,8 @@ header {
     margin-top: 16px;
     margin-bottom: 0;
     padding-left: 0;
+    gap: 16px;
+    
 }
 
 /* tablet screen */
@@ -1336,7 +1354,6 @@ header {
             flex-wrap: wrap;
             list-style: none;
             margin-top: 16px;
-            margin-left: 24px;
             margin-right: 0;
             margin-bottom: 0;
             padding-left: 0;
@@ -1352,15 +1369,12 @@ header {
             flex-wrap: wrap;
             list-style: none;
             margin-top: 16px;
-            margin-left: 120px;
             margin-right: 0;
+            margin-left: 0;
             margin-bottom: 0;
             padding-left: 0;
+            gap: 16px;
     }
-}
-
-.footer-li {
-    margin-right: 16px;
 }
 
 .social-media-title {
@@ -1377,7 +1391,7 @@ header {
 @media screen and (min-width:768px) {
 
     .social-media-title {
-        margin-left: 24px;
+            text-align: left;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
@@ -1393,11 +1407,12 @@ header {
 @media screen and (min-width:1158px) {
 
     .social-media-title {
-        margin-left: 120px;
+        text-align: left;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        margin-left: 0;
         margin-bottom: 0;
         margin-top: 0;
     }
@@ -1768,6 +1783,7 @@ header {
 @media screen and (min-width:768px) {
 
     .footer-subscribe {
+        text-align: left;
         margin-left: 92px;
        
 
@@ -1779,9 +1795,10 @@ header {
 @media screen and (min-width:1158px) {
 
     .footer-subscribe {
+        text-align: left;
         display: flex;
-        flex-direction: column;
         margin-left: 80px;
+        flex-direction: column;
         margin-top: 0;
     }
 }
