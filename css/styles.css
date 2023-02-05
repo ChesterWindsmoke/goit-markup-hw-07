@@ -461,8 +461,8 @@ header {
         background-image: linear-gradient(to right,
                     rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url(../images/desk-hero@1x.jpg);
-            max-width: 1440px;
-            height: 600px;
+            max-width: 1600px;
+            height: 603px;
             margin-left: auto;
             margin-right: auto;
             background-color: #2E2F42;
