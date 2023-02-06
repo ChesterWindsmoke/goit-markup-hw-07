@@ -251,7 +251,6 @@ header {
     color: #404BBF;
 }
 
-
 /* Оформлення auth-nav */
 .auth-nav {
     display: none;
@@ -407,17 +406,19 @@ header {
 
     }
 
-        @media screen and (min-width:428px) and (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-    
+        @media screen and (min-width: 320px) and (min-device-pixel-ratio: 2),
+        screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-width: 320px) and (min-resolution: 192dpi),
+        screen and (min-width: 320px) and (min-resolution: 2dppx) 
+        {
             .overlay {
-                background-image: linear-gradient(to right,
-                        rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                    url(../images/mob-hero@2x.jpg);
-                background-size: cover;
-                
-            }
+                    background-image: linear-gradient(to right,
+                            rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                        url(../images/mob-hero@2x.jpg);
+                    background-size: cover;
+            
+                }
+
         }
 
 
@@ -441,18 +442,19 @@ header {
 
 }
 
-@media screen and (min-width:429px) and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-
+ @media screen and (min-width: 429px) and (min-device-pixel-ratio: 2),
+ screen and (min-width: 429px) and (-webkit-min-device-pixel-ratio: 2),
+ screen and (min-width: 429px) and (min-resolution: 192dpi),
+ screen and (min-width: 429px) and (min-resolution: 2dppx) {
     .overlay {
-        background-image: linear-gradient(to right,
-                rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/tab-hero@2x.jpg);
-        background-size: cover;
-        
-    }
-}
+            background-image: linear-gradient(to right,
+                    rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/tab-hero@2x.jpg);
+            background-size: cover;
+    
+        }
+
+ }
 
 /* desktop screen */
 @media screen and (min-width:769px) {
@@ -473,17 +475,17 @@ header {
 
 }
 
-@media screen and (min-width:769px) and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 769px) and (min-resolution: 192dpi),
+screen and (min-width: 769px) and (min-resolution: 2dppx) {
     .overlay {
-        background-image: linear-gradient(to right,
-                rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/desk-hero@2x.jpg);
-        background-size: cover;
-        
-    }
+            background-image: linear-gradient(to right,
+                    rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/desk-hero@2x.jpg);
+            background-size: cover;
+    
+        }
 }
 
 .hero-title {
